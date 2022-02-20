@@ -199,7 +199,6 @@
         color: #333333;
     }
 }
-
 .info {
 }
 .content {
@@ -208,7 +207,7 @@
     margin: 0 auto;
     max-width: 1296px;
     width: 1296px auto;
-    // height: 434px;
+    margin-bottom: 150px;
 
     &__left {
         margin-right: 24px;
@@ -239,28 +238,105 @@
         flex-wrap: wrap;
     }
 
-    &__item {
-        margin-bottom: 54px;
-        margin-right: 24px;
+    &__row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 54px;
     }
-    &__item svg {
+    &__row:last-child {
+        margin-bottom: 0px;
+    }
+    &__column svg {
         margin-bottom: 20px;
     }
-    .text {
+    &__column:last-child {
+        margin-right: 0px;
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 24px;
+
+        .text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            width: 306px;
+            height: 44px;
+
+            text-align: center;
+
+            color: #333333;
+        }
+    }
+}
+
+.service {
+    background: #d3b288;
+    // opacity: 0.1;
+}
+.procedures {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 1296px;
+    &__info {
+        margin-right: 24px;
+        width: 416px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 140%;
+        color: #333333;
+        margin-bottom: 25px;
+        width: 306px;
+    }
+
+    &__sub-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        color: #333333;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__card {
+        background: #d3b288;
+        display: flex;
+        border-radius: 5px;
+        margin-right: 24px;
+        width: 196px;
+        height: 260px;
+        .border {
+            display: flex;
+            border: 3px solid #ffffff;
+            box-sizing: border-box;
+            margin: 10px 10px;
+            width: 176px;
+        }
+    }
+    &__card span {
+        padding: 188px 18px 30px;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 140%;
-        width: 306px;
-        height: 44px;
-
         text-align: center;
-
-        color: #333333;
+        color: #ffffff;
+    }
+    &__card:last-child {
+        margin-right: 0px;
     }
 }

@@ -265,6 +265,7 @@
   margin: 0 auto;
   max-width: 1296px;
   width: 1296px auto;
+  margin-bottom: 150px;
 }
 
 .content__left {
@@ -301,9 +302,30 @@
       flex-wrap: wrap;
 }
 
-.content__item {
+.content__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-bottom: 54px;
-  margin-right: 24px;
+}
+
+.content__row:last-child {
+  margin-bottom: 0px;
+}
+
+.content__column svg {
+  margin-bottom: 20px;
+}
+
+.content__column:last-child {
+  margin-right: 0px;
+}
+
+.content__column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,13 +339,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 24px;
 }
 
-.content__item svg {
-  margin-bottom: 20px;
-}
-
-.content .text {
+.content__column .text {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -332,4 +351,89 @@
   height: 44px;
   text-align: center;
   color: #333333;
+}
+
+.service {
+  background: #d3b288;
+}
+
+.procedures {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1296px;
+}
+
+.procedures__info {
+  margin-right: 24px;
+  width: 416px;
+}
+
+.procedures__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140%;
+  color: #333333;
+  margin-bottom: 25px;
+  width: 306px;
+}
+
+.procedures__sub-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.procedures__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.procedures__card {
+  background: #d3b288;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  margin-right: 24px;
+  width: 196px;
+  height: 260px;
+}
+
+.procedures__card .border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 10px;
+  width: 176px;
+}
+
+.procedures__card span {
+  padding: 188px 18px 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.procedures__card:last-child {
+  margin-right: 0px;
 }
