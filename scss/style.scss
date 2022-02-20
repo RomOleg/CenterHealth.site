@@ -68,6 +68,8 @@
         font-size: 14px;
         line-height: 140%;
 
+        border-bottom: 2px dashed #d3b288;
+
         color: #333333;
     }
     &__location a {
@@ -95,7 +97,6 @@
     width: "100%";
     max-height: 700px;
     height: 700px;
-    background-color: red;
     background: url("../image/background-1.png") 100%;
 
     &__book {
@@ -104,7 +105,7 @@
         max-width: 526px;
         height: 700px;
         background: #ffffff;
-        margin: 0px 0px 0px 402px;
+        margin-left: 492px;
     }
     &__border {
         margin: 20px;
@@ -157,12 +158,109 @@
     }
 }
 
-.footer {
-}
-.last-line {
-    &__row {
+.about {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    margin: 150px auto;
+    // margin: 150px 0;
+    max-width: 1076px;
+    max-height: 400px;
+
+    &__item {
+        margin-right: 134px;
     }
 
-    &__text {
+    &__item img {
+        height: 100%;
+        max-height: 416;
+    }
+
+    &__item:last-child {
+        margin: 0px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 140%;
+
+        color: #d3b288;
+    }
+
+    &__text p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+
+        color: #333333;
+    }
+}
+
+.info {
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1296px;
+    width: 1296px auto;
+    // height: 434px;
+
+    &__left {
+        margin-right: 24px;
+        width: 306px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 140%;
+        color: #d3b288;
+        margin-bottom: 10px;
+    }
+
+    &__sub-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+
+        color: #333333;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 54px;
+        margin-right: 24px;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+    &__item svg {
+        margin-bottom: 20px;
+    }
+    .text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        width: 306px;
+        height: 44px;
+
+        text-align: center;
+
+        color: #333333;
     }
 }
